@@ -21,6 +21,11 @@ body,html{
     height: fit-content;
     padding: 2%;
     font-size: 2em;
+    word-break: break-all;
+}
+
+.question span:nth-child(2){
+    margin-right: 3vw;
 }
 
 .question_no{
@@ -127,6 +132,7 @@ body,html{
 .option_text{
     width:60%;
     padding: 5%;
+    word-break: break-all;
 }
 .option_check{
     border-radius: 50%;
