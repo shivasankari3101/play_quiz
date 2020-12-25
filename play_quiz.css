@@ -42,6 +42,16 @@ body,html{
     cursor: pointer;
 }
 
+.timer_container,.answers{
+    display: flex;
+    justify-content: center;
+}
+.answers{
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .play_quiz_timer,.play_quiz_answers{
     width: 23vh;
     height: 23vh;
@@ -51,6 +61,7 @@ body,html{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px -4px 0px 0px inset;
 }
 
 .question_image{
@@ -70,6 +81,7 @@ body,html{
     display: flex;
     flex-direction: column;
     color: #fff;
+    font-weight: 500;
 }
 
 .options .row{
@@ -88,6 +100,9 @@ body,html{
     border-radius: 5px;
     box-shadow:rgba(0, 0, 0, 0.35) 0px -4px 0px 0px inset;
     cursor: pointer;
+}
+.options .option:hover{
+    transform: scale(0.99);
 }
 .option1{
     background-color: rgb(208, 25, 55);
@@ -139,6 +154,17 @@ body,html{
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    .play_quiz_timer,.play_quiz_answers{
+        width: 17vh;
+        height: 17vh;
+        font-size: 2rem;
+        margin: 10% 0 10% 0;
+    }
+
+    .play_quiz_timer{
+        margin-top: 0;
+    }
     .question_image img{
         width: 80vw;
         height: 40vh;
@@ -158,8 +184,8 @@ body,html{
         padding: 5%;
     }
     .options .option{
-        width: 96vw;
+        width: 90vw;
         min-height: 11vh;
-        margin:0 1vw 2vh 1vw;
+        margin:0 1vw 2vh 4vw;
     }   
 }
